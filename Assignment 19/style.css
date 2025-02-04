@@ -16,7 +16,7 @@
     letter-spacing: 3px;
 }
 
-@media (min-width: 414px) and (max-width: 992px) {
+@media (min-width: 320px) and (max-width: 992px) {
     .village-section {
         text-align: center;
     }
