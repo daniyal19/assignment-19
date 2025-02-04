@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 19</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Audiowide&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+AU+SA:wght@100..400&family=Playwrite+AU+VIC+Guides&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: black;">
+    <nav class="navbar navbar-expand-lg  bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo.webp" alt="Logo" width="165px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link text-light" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-dark border border-secondary rounded-5 py-0"><a
+                                class="nav-link text-light" href="#">Get a Franchise</a></button>
+                    </li>
+                    <li class="nav-item ms-1">
+                        <button type="button" class="btn btn-danger rounded-5 py-0"><a class="nav-link text-light"
+                                href="#">Order Online <i class="fa-solid fa-circle-arrow-right"
+                                    style="color: #ffffff;"></i></a></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Slider -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="5"
+                aria-label="Slide 6"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./images/slide1.webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/slide2.webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/slide3.webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/slide4.webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/slide5.webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/slide6.webp" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
+
+    <!-- brands -->
+    <div class="container">
+        <div class="row text-light justify-content-center py-5">
+            <div class="col-12 text-center py-5">
+                <h2>Welcome to <span class="logo-name fs-1">Salt'n Pepper</span>
+                    <br>
+                    Restaurants! Our Brands
+                </h2>
+                <p>Please click our brands below for further information, reservations or to order online!</p>
+            </div>
+
+            <div class="col-lg-3 col-sm-12">
+                <div class="card border-0 w-100" style="width: 18rem;">
+                    <img src="./images/brand 1.webp" class="card-img-top p-4" alt="...">
+                    <div class="card-body bg-black text-center">
+                        <a href="#" class="btn text-light border rounded-5 px-4 py-2">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-12">
+                <div class="card border-0 w-100" style="width: 18rem;">
+                    <img src="./images/brand 2.webp" class="card-img-top p-4" alt="...">
+                    <div class="card-body bg-black text-center">
+                        <a href="#" class="btn text-light border rounded-5 px-4 py-2">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-12">
+                <div class="card border-0 w-100" style="width: 18rem;">
+                    <img src="./images/brand 3.webp" class="card-img-top p-4" alt="...">
+                    <div class="card-body bg-black text-center">
+                        <a href="#" class="btn text-light border rounded-5 px-4 py-2">Reserve a Seat</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- branch and address -->
+    <div class="container bg-dark">
+        <div class="row text-light pt-5 ">
+            <div class="col-12 text-center ">
+                <h1><span class="logo-name fs-1">Salt'n Pepper</span>
+                    <br>
+                    Restaurant Franchises
+                    <br>
+                </h1>
+                <p>Each of our franchises are individually managed. For further details, kindly contact them directly.
+                </p>
+            </div>
+        </div>
+
+        <div class="row py-5 branch">
+            <div class="col-lg-6 col-sm-12 text-light for-mobile">
+                <p class="text-danger text-uppercase">Islamabad</p>
+                <h3><span class="logo-name fs-2">Salt'n Pepper</span> Reataurant</h3>
+                <address><i class="fa-solid fa-location-dot"></i> Plot# 55, Shabbir Plaza, Blue Area, F-6, Islamabad
+                    <br>
+                    <i class="fa-solid fa-phone"></i> Ph: 051-2604904-6
+                </address>
+                <button type="button" class="btn bg-black rounded-5 py-2"><a class="nav-link text-light" href="#">Get
+                        Direction <i class="fa-solid fa-circle-arrow-right text-danger"></i></a>
+                </button>
+            </div>
+
+            <div class="col-lg-6 col-sm-12 for-mobile-2">
+                <img src="./images/shop1.webp" alt="" class="img-fluid">
+            </div>
+        </div>
+
+        <div class="row py-5 branch">
+            <div class="col-lg-6 col-sm-12">
+                <img src="./images/shop2.webp" alt="" class="img-fluid">
+            </div>
+
+            <div class="col-lg-6 col-sm-12 text-light">
+                <p class="text-danger text-uppercase">Faisalabad</p>
+                <h3><span class="logo-name fs-2">Salt'n Pepper</span> Reataurant</h3>
+                <address><i class="fa-solid fa-location-dot"></i> 4-Kohinoor City, Faisalabad
+                    <br>
+                    <i class="fa-solid fa-phone"></i> Ph: 041-8711404
+                </address>
+                <button type="button" class="btn bg-black rounded-5 py-2"><a class="nav-link text-light" href="#">Get
+                        Direction <i class="fa-solid fa-circle-arrow-right text-danger"></i></a>
+                </button>
+            </div>
+        </div>
+
+        <div class="row py-5 branch">
+            <div class="col-lg-6 col-sm-12 text-light for-mobile">
+                <p class="text-danger text-uppercase">Bahawalpur</p>
+                <h3><span class="logo-name fs-2">Salt'n Pepper</span> Reataurant</h3>
+                <address><i class="fa-solid fa-location-dot"></i> D.C Chowk, opposite Commissioner House, Bahawalpur
+                    <br>
+                    <i class="fa-solid fa-phone"></i> Ph: 062-2740271-2
+                </address>
+                <button type="button" class="btn bg-black rounded-5 py-2"><a class="nav-link text-light" href="#">Get
+                        Direction <i class="fa-solid fa-circle-arrow-right text-danger"></i></a>
+                </button>
+            </div>
+
+            <div class="col-lg-6 col-sm-12 for-mobile-2">
+                <img src="./images/shop3.webp" alt="" class="img-fluid">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- franchise section -->
+    <div class="container">
+        <div class="row text-light py-5">
+            <div class="col-12 text-center py-5">
+                <h1><span class="logo-name">Salt'n Pepper</span>
+                    <br>
+                    Express Franchises
+                </h1>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <div class="card bg-black w-100" style="width: 18rem;">
+                    <img src="./images/franchise1.webp" class="card-img-top" alt="...">
+                    <div class="card-body text-light text-center">
+                        <p class="text-danger text-uppercase">sargodha</p>
+                        <h5 class="card-title"><span class="logo-name">Salt'n Pepper</span> Express</h5>
+                        <p class="card-text"><i class="fa-solid fa-location-dot"></i> Opposite Sargodha Arts Council
+                            Babar Road</p>
+                        <p><i class="fa-solid fa-phone"></i> Ph: 048-3725500</p>
+                        <a href="#" class="btn text-light border rounded-5">Get Directions <i
+                                class="fa-solid fa-circle-arrow-right fa-rotate-by text-danger"
+                                style="--fa-rotate-angle: 330deg;"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-12">
+                <div class="card bg-black w-100" style="width: 18rem;">
+                    <img src="./images/franchise2.webp" class="card-img-top" alt="...">
+                    <div class="card-body text-light text-center">
+                        <p class="text-danger text-uppercase">sargodha</p>
+                        <h5 class="card-title"><span class="logo-name">Salt'n Pepper</span> Express</h5>
+                        <p class="card-text"><i class="fa-solid fa-location-dot"></i> Opposite Sargodha Arts Council
+                            Babar Road</p>
+                        <p><i class="fa-solid fa-phone"></i> Ph: 048-3725500</p>
+                        <a href="#" class="btn text-light border rounded-5">Get Directions <i
+                                class="fa-solid fa-circle-arrow-right fa-rotate-by text-danger"
+                                style="--fa-rotate-angle: 330deg;"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-12">
+                <div class="card bg-black w-100" style="width: 18rem;">
+                    <img src="./images/franchise3.webp" class="card-img-top" alt="...">
+                    <div class="card-body text-light text-center">
+                        <p class="text-danger text-uppercase">sargodha</p>
+                        <h5 class="card-title"><span class="logo-name">Salt'n Pepper</span> Express</h5>
+                        <p class="card-text"><i class="fa-solid fa-location-dot"></i> Opposite Sargodha Arts Council
+                            Babar Road</p>
+                        <p><i class="fa-solid fa-phone"></i> Ph: 048-3725500</p>
+                        <a href="#" class="btn text-light border rounded-5">Get Directions <i
+                                class="fa-solid fa-circle-arrow-right fa-rotate-by text-danger"
+                                style="--fa-rotate-angle: 330deg;"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-12">
+                <div class="card bg-black w-100" style="width: 18rem;">
+                    <img src="./images/franchise4.webp" class="card-img-top" alt="...">
+                    <div class="card-body text-light text-center">
+                        <p class="text-danger text-uppercase">sargodha</p>
+                        <h5 class="card-title"><span class="logo-name">Salt'n Pepper</span> Express</h5>
+                        <p class="card-text"><i class="fa-solid fa-location-dot"></i> Opposite Sargodha Arts Council
+                            Babar Road</p>
+                        <p><i class="fa-solid fa-phone"></i> Ph: 048-3725500</p>
+                        <a href="#" class="btn text-light border rounded-5">Get Directions <i
+                                class="fa-solid fa-circle-arrow-right fa-rotate-by text-danger"
+                                style="--fa-rotate-angle: 330deg;"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-12">
+                <div class="card bg-black w-100" style="width: 18rem;">
+                    <img src="./images/franchise5.webp" class="card-img-top" alt="...">
+                    <div class="card-body text-light text-center">
+                        <p class="text-danger text-uppercase">sargodha</p>
+                        <h5 class="card-title"><span class="logo-name">Salt'n Pepper</span> Express</h5>
+                        <p class="card-text"><i class="fa-solid fa-location-dot"></i> Opposite Sargodha Arts Council
+                            Babar Road</p>
+                        <p><i class="fa-solid fa-phone"></i> Ph: 048-3725500</p>
+                        <a href="#" class="btn text-light border rounded-5">Get Directions <i
+                                class="fa-solid fa-circle-arrow-right fa-rotate-by text-danger"
+                                style="--fa-rotate-angle: 330deg;"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-12">
+                <div class="card bg-black w-100" style="width: 18rem;">
+                    <img src="./images/franchise6.webp" class="card-img-top" alt="...">
+                    <div class="card-body text-light text-center">
+                        <p class="text-danger text-uppercase">sargodha</p>
+                        <h5 class="card-title"><span class="logo-name">Salt'n Pepper</span> Express</h5>
+                        <p class="card-text"><i class="fa-solid fa-location-dot"></i> Opposite Sargodha Arts Council
+                            Babar Road</p>
+                        <p><i class="fa-solid fa-phone"></i> Ph: 048-3725500</p>
+                        <a href="#" class="btn text-light border rounded-5">Get Directions <i
+                                class="fa-solid fa-circle-arrow-right fa-rotate-by text-danger"
+                                style="--fa-rotate-angle: 330deg;"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-12">
+                <div class="card bg-black w-100" style="width: 18rem;">
+                    <img src="./images/franchise5.webp" class="card-img-top" alt="...">
+                    <div class="card-body text-light text-center">
+                        <p class="text-danger text-uppercase">sargodha</p>
+                        <h5 class="card-title"><span class="logo-name">Salt'n Pepper</span> Express</h5>
+                        <p class="card-text"><i class="fa-solid fa-location-dot"></i> Opposite Sargodha Arts Council
+                            Babar Road</p>
+                        <p><i class="fa-solid fa-phone"></i> Ph: 048-3725500</p>
+                        <a href="#" class="btn text-light border rounded-5">Get Directions <i
+                                class="fa-solid fa-circle-arrow-right fa-rotate-by text-danger"
+                                style="--fa-rotate-angle: 330deg;"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-12">
+                <div class="card bg-black w-100" style="width: 18rem;">
+                    <img src="./images/franchise2.webp" class="card-img-top" alt="...">
+                    <div class="card-body text-light text-center">
+                        <p class="text-danger text-uppercase">sargodha</p>
+                        <h5 class="card-title"><span class="logo-name">Salt'n Pepper</span> Express</h5>
+                        <p class="card-text"><i class="fa-solid fa-location-dot"></i> Opposite Sargodha Arts Council
+                            Babar Road</p>
+                        <p><i class="fa-solid fa-phone"></i> Ph: 048-3725500</p>
+                        <a href="#" class="btn text-light border rounded-5">Get Directions <i
+                                class="fa-solid fa-circle-arrow-right fa-rotate-by text-danger"
+                                style="--fa-rotate-angle: 330deg;"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-12">
+                <div class="card bg-black w-100" style="width: 18rem;">
+                    <img src="./images/franchise3.webp" class="card-img-top" alt="...">
+                    <div class="card-body text-light text-center">
+                        <p class="text-danger text-uppercase">sargodha</p>
+                        <h5 class="card-title"><span class="logo-name">Salt'n Pepper</span> Express</h5>
+                        <p class="card-text"><i class="fa-solid fa-location-dot"></i> Opposite Sargodha Arts Council
+                            Babar Road</p>
+                        <p><i class="fa-solid fa-phone"></i> Ph: 048-3725500</p>
+                        <a href="#" class="btn text-light border rounded-5">Get Directions <i
+                                class="fa-solid fa-circle-arrow-right fa-rotate-by text-danger"
+                                style="--fa-rotate-angle: 330deg;"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- village section -->
+    <div class="container-fluid">
+        <div class="row text-light py-5 village-section">
+            <div class="col-12 text-center py-5">
+                <h1><span class="logo-name">Salt'n Pepper</span>
+                    <br>
+                    Village Franchise
+                </h1>
+            </div>
+
+            <div class="col-lg-6 col-sm-12">
+                <img src="./images/village1.webp" alt="" class="img-fluid">
+            </div>
+
+            <div class="col-lg-6 col-sm-12 text-light align-self-center">
+                <p class="text-danger text-uppercase">Gujranwala</p>
+                <h3><span class="logo-name fs-2">Salt'n Pepper</span> Reataurant</h3>
+                <address><i class="fa-solid fa-location-dot"></i> 4-Kohinoor City, Faisalabad
+                    <br>
+                    <i class="fa-solid fa-phone"></i> Ph: 041-8711404
+                </address>
+                <button type="button" class="btn btn-success rounded-5 py-2"><a class="nav-link text-light" href="#">Get
+                        Direction <i class="fa-solid fa-circle-arrow-right"></i></a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- upcoming section -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center text-light py-5">
+                <h1><span class="logo-name">Salt'n Pepper</span>
+                    <br>
+                    Express Franchises <span class="fs-3">(Opening Soon)</span>
+                    <br>
+                </h1>
+            </div>
+
+            <div class="col-lg-4 col-sm-12 mb-5">
+                <div class="card w-100" style="width: 18rem;">
+                    <div class="card-body text-center">
+                        <img src="images/image-icon.webp" alt="">
+                        <p class="text-danger">coming soon</p>
+                        <p class="fs-4"><span class="fw-bold">Salt'n Pepper</span> Express
+                            <br><span class="fs-5">Burewala</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-12 mb-5">
+                <div class="card w-100" style="width: 18rem;">
+                    <div class="card-body text-center">
+                        <img src="images/image-icon.webp" alt="">
+                        <p class="text-danger">coming soon</p>
+                        <p class="fs-4"><span class="fw-bold">Salt'n Pepper</span> Express
+                            <br><span class="fs-5">Blue World City Rawalpindi</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-12 mb-5">
+                <div class="card w-100" style="width: 18rem;">
+                    <div class="card-body text-center">
+                        <img src="images/image-icon.webp" alt="">
+                        <p class="text-danger">coming soon</p>
+                        <p class="fs-4"><span class="fw-bold">Salt'n Pepper</span> Express
+                            <br><span class="fs-5">Al-Jalil Garden Sharqpur</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-12 mb-5">
+                <div class="card w-100" style="width: 18rem;">
+                    <div class="card-body text-center">
+                        <img src="images/image-icon.webp" alt="">
+                        <p class="text-danger">coming soon</p>
+                        <p class="fs-4"><span class="fw-bold">Salt'n Pepper</span> Express
+                            <br><span class="fs-5">Al-Jalil Garden Sadhoke</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-12 mb-5">
+                <div class="card w-100" style="width: 18rem;">
+                    <div class="card-body text-center">
+                        <img src="images/image-icon.webp" alt="">
+                        <p class="text-danger">coming soon</p>
+                        <p class="fs-4"><span class="fw-bold">Salt'n Pepper</span> Express
+                            <br><span class="fs-5">Al-Jalil Garden Sheikhupura</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-12 mb-5">
+                <div class="card w-100" style="width: 18rem;">
+                    <div class="card-body text-center">
+                        <img src="images/image-icon.webp" alt="">
+                        <p class="text-danger">coming soon</p>
+                        <p class="fs-4"><span class="fw-bold">Salt'n Pepper</span> Express
+                            <br><span class="fs-5">DHA Lahore</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- social feed section -->
+    <div class="container-fluid pb-5">
+        <div class="row">
+            <div class="col-12 text-center text-light py-4">
+                <h1>Social Feed</h1>
+            </div>
+
+            <div class="col-lg-2 col-sm-4">
+                <img src="./images/food1.webp" class="img-thumbnail bg-dark border-0">
+            </div>
+
+            <div class="col-lg-2 col-sm-4">
+                <img src="./images/food2.webp" class="img-thumbnail bg-dark border-0">
+            </div>
+
+            <div class="col-lg-2 col-sm-4">
+                <img src="./images/food3.webp" class="img-thumbnail bg-dark border-0">
+            </div>
+
+            <div class="col-lg-2 col-sm-4">
+                <img src="./images/food 4.webp" class="img-thumbnail bg-dark border-0">
+            </div>
+
+            <div class="col-lg-2 col-sm-4">
+                <img src="./images/food5.webp" class="img-thumbnail bg-dark border-0">
+            </div>
+
+            <div class="col-lg-2 col-sm-4">
+                <img src="./images/food 4.webp" class="img-thumbnail bg-dark border-0">
+            </div>
+        </div>
+    </div>
+
+    <!-- End links -->
+    <div class="container py-5">
+        <div class="row text-secondary">
+            <div class="col-lg-4 col-sm-12 page-end">
+                <img src="./images/logo.webp" alt="" width="150px" class="mb-3">
+                <p class="fs-6">The Salt’n Pepper Restaurants are an example of gracious dinning, outstanding service,
+                    extraordinary classic and contemporary cuisine. The restaurants have become the ultimate dinning
+                    destinations in Lahore. From family occasions to business dinner and moments of the heart, this
+                    place is where unforgettable memories are made.</p>
+
+                <a href="#" class="text-decoration-none text-secondary me-3">Terms & Conditions</a> <a href="#"
+                    class="text-decoration-none text-secondary">Privacy policy</a>
+            </div>
+
+            <div class="col-lg-2 col-sm-4 ps-5">
+                <h4 class="text-light">Site Links</h4>
+                <ul class="list-unstyled lh-lg">
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Publications</li>
+                    <li>Get a Franchise</li>
+                    <li>Feedback</li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-sm-4 ps-5">
+                <h4 class="text-light">Contact Us</h4>
+                <ul class="list-unstyled lh-lg">
+                    <li>
+                        <h5>Head Office Address</h5>
+                        <p>Foodconsults (Pvt) Ltd 23-Usman Block, New GardenTown, Lahore, Pakistan</p>
+                    </li>
+                    <li>
+                        <h5>Head Office Number</h5>
+                        <p>+92 42 358 509 31</p>
+                        <p>+92 42 358 509 30</p>
+                    </li>
+                    <li>
+                        <h5>Email Address</h5>
+                        <p>snpfood@brain.net.pk</p>
+                    </li>
+                    <li>
+                        <h5>Free Delivery Number</h5>
+                        <p>+92 42 111 100 678</p>
+                        <p>+92 03 111 444 610</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-sm-4 lh-lg ps-5">
+                <h4 class="text-light">Follow Us</h4>
+                <a href="#"><i class="fa-brands fa-facebook text-danger fs-5"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram text-danger fs-5"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter text-danger fs-5"></i></a>
+                <br>
+                <ul class="list-unstyled">
+                    <li class="py-2"><a href="#"><img src="./images/ios.webp" alt=""></a></li>
+
+                    <li><a href="#"><img src="./images/android.webp" alt=""></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container text-light border-top">
+        <p>© 2025 Snp Main</p>
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
